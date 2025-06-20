@@ -2,237 +2,83 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Happy Birthday, Nikkie!</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday, Nikkie 🎀</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display&display=swap" rel="stylesheet" />
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      font-family: 'Playfair Display', serif;
-      background: #fff5f7;
-      color: #d14d7a;
-      overflow-x: hidden;
-      position: relative;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    header {
+    body {
+      background-color: #fff0f5;
+      font-family: 'Playfair Display', serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
       text-align: center;
-      padding: 3rem 1rem;
-      background: linear-gradient(135deg, #ffd6e7, #fff);
-      border-bottom: 1px solid rgba(209,77,122,0.2);
     }
 
     h1 {
       font-family: 'Dancing Script', cursive;
-      font-size: 3.5rem;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+      font-size: 3rem;
+      color: #d14d7a;
+      margin-bottom: 2rem;
     }
 
-    .subtitle {
-      font-size: 1.5rem;
-      margin-top: .5rem;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-
-    section {
-      margin-bottom: 3rem;
-    }
-
-    .gallery-container {
-      background: #fff;
-      padding: 1rem;
-      border-radius: 15px;
-      box-shadow: 0 10px 30px rgba(209,77,122,0.1);
-      border: 1px solid rgba(209,77,122,0.2);
-      position: relative;
-    }
-
-    .gallery {
-      display: flex;
-      overflow: hidden;
-      width: 100%;
-    }
-
-    .gallery img {
-      width: 100%;
-      height: 400px;
-      object-fit: cover;
-      border-radius: 8px;
-      display: none;
-    }
-
-    .gallery img.active {
-      display: block;
-    }
-
-    .gallery-controls {
-      position: absolute;
-      top: 50%;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      transform: translateY(-50%);
-    }
-
-    .gallery-controls button {
-      background-color: rgba(209,77,122,0.7);
-      border: none;
-      color: white;
-      font-size: 1.5rem;
-      padding: 0.5rem 1rem;
-      cursor: pointer;
-      border-radius: 50%;
-    }
-
-    .video-container {
-      position: relative;
-      width: 100%;
-      overflow: hidden;
-      border-radius: 15px;
-      box-shadow: 0 10px 30px rgba(209,77,122,0.1);
-      background: #fff;
-      border: 1px solid rgba(209,77,122,0.2);
-    }
-
-    .video-container video {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 15px;
-    }
-
-    .read-button {
-      display: block;
-      margin: 2rem auto;
-      padding: 0.8rem 2rem;
-      background: #d14d7a;
-      color: #fff;
-      border: none;
-      border-radius: 25px;
-      font-family: 'Dancing Script', cursive;
-      font-size: 1rem;
-      text-decoration: none;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: background 0.3s;
-      width: fit-content;
-    }
-
-    .read-button:hover {
-      background: #ba3e68;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: linear-gradient(135deg, #fff, #ffd6e7);
-      font-family: 'Dancing Script', cursive;
-      font-size: 1.5rem;
-      border-top: 1px solid rgba(209,77,122,0.2);
-    }
-
-    .floating {
-      position: absolute;
-      pointer-events: none;
-      opacity: 0.6;
-      font-size: 22px;
-      animation: float 8s infinite ease-in-out;
+    .emoji-envelope {
+      font-size: 6rem;
+      margin-bottom: 1.5rem;
+      animation: float 2s ease-in-out infinite;
     }
 
     @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-30px); }
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
     }
 
-    @media(max-width:768px) {
-      h1 { font-size: 2.5rem; }
-      .subtitle { font-size: 1.2rem; }
-      .gallery img { height: 300px; }
+    .open-text {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #d14d7a;
     }
 
-    @media(max-width:480px) {
-      h1 { font-size: 2rem; }
-      .subtitle { font-size: 1rem; }
-      .gallery img { height: 250px; }
+    .btn {
+      margin-top: 2rem;
+      padding: 1rem 2.5rem;
+      background-color: #d14d7a;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      font-size: 1.2rem;
+      font-family: 'Dancing Script', cursive;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #ba3e68;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Happy Birthday, Nikkie!</h1>
-    <p class="subtitle">Wishing you the most magical day filled with love and joy.</p>
-  </header>
+  <h1>Happy Birthday, Nikkie 🎀</h1>
 
-  <div class="container">
+  <!-- Closed envelope icon -->
+  <div class="emoji-envelope" aria-label="Closed invitation envelope">✉️</div>
 
-    <section>
-      <h2>Our Beautiful Memories</h2>
-      <div class="gallery-container">
-        <div class="gallery" id="gallery">
-          <img src="12.jpg" alt="Memory 1" class="active">
-          <img src="13.jpg" alt="Memory 2">
-          <img src="14.jpg" alt="Memory 3">
-          <img src="15.jpg" alt="Memory 4">
-        </div>
-        <div class="gallery-controls">
-          <button onclick="prevSlide()">❮</button>
-          <button onclick="nextSlide()">❯</button>
-        </div>
-      </div>
-    </section>
+  <div class="open-text">Tap to Open Your Letter 💌</div>
 
-    <section>
-      <h2>A Special Video Message</h2>
-      <div class="video-container">
-        <video src="nikkie.mp4" controls playsinline></video>
-      </div>
-    </section>
-
-    <a href="message.html" class="read-button" aria-label="Read my birthday message">💌 Read My Message</a>
-
-  </div>
-
-  <footer>
-    Made with love for the most special person in my life ❤️
-  </footer>
-
-  <script>
-    function spawn() {
-      const el = document.createElement('div');
-      const sym = ['🎀','✨','💖','🌸','❤️'];
-      el.textContent = sym[Math.floor(Math.random() * sym.length)];
-      el.className = 'floating';
-      el.style.left = Math.random() * 100 + 'vw';
-      el.style.top = Math.random() * 100 + 'vh';
-      document.body.appendChild(el);
-      setTimeout(() => el.remove(), 8000);
-    }
-    setInterval(spawn, 700);
-
-    const images = document.querySelectorAll('.gallery img');
-    let index = 0;
-
-    function showImage(i) {
-      images.forEach(img => img.classList.remove('active'));
-      images[i].classList.add('active');
-    }
-
-    function nextSlide() {
-      index = (index + 1) % images.length;
-      showImage(index);
-    }
-
-    function prevSlide() {
-      index = (index - 1 + images.length) % images.length;
-      showImage(index);
-    }
-  </script>
+  <a href="index.html" class="btn">Click to Open</a>
 
 </body>
 </html>
