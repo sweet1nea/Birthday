@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday, Nikkie 🎀</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #fff0f5;
+      font-family: 'Playfair Display', serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 3rem;
+      color: #d14d7a;
+      margin-bottom: 2rem;
+    }
+
+    .emoji-envelope {
+      font-size: 6rem;
+      margin-bottom: 1.5rem;
+      animation: float 2s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    .open-text {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #d14d7a;
+    }
+
+    .btn {
+      margin-top: 2rem;
+      padding: 1rem 2.5rem;
+      background-color: #d14d7a;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      font-size: 1.2rem;
+      font-family: 'Dancing Script', cursive;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #ba3e68;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Happy Birthday, Nikkie 🎀</h1>
+
+  <!-- Closed envelope icon -->
+  <div class="emoji-envelope" aria-label="Closed invitation envelope">✉️</div>
+
+  <div class="open-text">Tap to Open Your Letter 💌</div>
+
+  <a href="index.html" class="btn">Click to Open</a>
+
+</body>
+</html>
